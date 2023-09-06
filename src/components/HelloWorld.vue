@@ -19,13 +19,15 @@ function displayFile(input, ev) {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <div className="p-4 flex flex-col gap-4">
+    <h1 className="text-3xl font-bold underline">{{ msg }}</h1>
 
-  <input id="uploadInput" type="file" @change="displayFile" />
+    <input id="uploadInput" type="file" @change="displayFile" />
 
-  <!-- Container to display the uploaded file -->
-  <div id="fileContainer">
-    <img id="uploadedFile" style="max-width: 300px; max-height: 300px" />
+    <!-- Container to display the uploaded file -->
+    <div id="fileContainer">
+      <img id="uploadedFile" style="max-width: 300px; max-height: 300px" />
+    </div>
   </div>
 </template>
 
